@@ -13,6 +13,7 @@ Create a small automation layer to support smoke testing of selected Euro Flow w
 - Open the Euro Flow local application.
 - Validate that the main page loads.
 - Validate that bank connections stay blocked when Enable Banking credentials are empty.
+- Validate that bank search does not reach the API when credentials are empty.
 - Capture a screenshot as test evidence.
 
 ## Tools
@@ -52,6 +53,7 @@ Set `EUROFLOW_BASE_URL` to test another local URL.
 - First homepage smoke test implemented.
 - Test executed successfully locally.
 - `BUG-001` automated as an expected failure: Banks shows a seeded PSD2 certificate when credentials are empty.
+- `BUG-002` automated as an expected failure: bank search reaches the API without credentials, receives HTTP 500 and shows no actionable error in the UI.
 
 ## Notes
 
