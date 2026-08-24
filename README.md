@@ -50,7 +50,8 @@ Set `EUROFLOW_BASE_URL` to test another local URL.
 ## Current Status
 
 - Initial Playwright + pytest structure created.
-- First homepage smoke test implemented.
+- Homepage smoke test validates the HTTP response, redirect to the first-run setup wizard, Euro Flow branding, security step and
+  navigation controls.
 - Test executed successfully locally.
 - `BUG-001` automated as an expected failure: Banks shows a seeded PSD2 certificate when credentials are empty.
 - `BUG-002` automated as an expected failure: bank search reaches the API without credentials, receives HTTP 500 and shows no actionable error in the UI.
